@@ -21,6 +21,7 @@ function App() {
           <div className="content__items">
             {pizzaCatalogue.map((pizzaItem) => (
                         <PizzaBlock 
+                        key={pizzaItem.id}
          {... pizzaItem}
                         />
                         ))}

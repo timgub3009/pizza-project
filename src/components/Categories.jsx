@@ -16,7 +16,7 @@ const onClickChooseCategory = (index) => {
     <div className="categories">
       <ul>
       {categories.map((value, index) => (
-        <li className={isActive === index ? 'active' : ''} onClick={() => {onClickChooseCategory(index)}}>{value}</li>
+        <li key={index} className={isActive === index ? 'active' : ''} onClick={() => {onClickChooseCategory(index)}}>{value}</li>
         ))}
       </ul>
     </div>
